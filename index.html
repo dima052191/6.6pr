@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>email</title>
+</head>
+<body>
+    <form action="mailto:example@example.com" method="get" onsubmit="return sendEmail()">
+        <label for="to">Адреса одержувача:</label><br>
+        <input type="email" id="to" name="to"><br>
+        <label for="subject">Тема:</label><br>
+        <input type="text" id="subject" name="subject"><br>
+        <label for="body">Основна частина :</label><br>
+        <textarea id="body" name="body"></textarea><br>
+        <input type="submit" value="Відправити">
+      </form>
+      
+      <script>
+        function sendEmail() {
+          alert('Повідомлення було успішно відправлено.');
+          return true;
+        }
+      </script>
+</body>
+</html>
